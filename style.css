@@ -1,0 +1,412 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F4BBD3; 
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1E4F3; 
+    height: 100px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    border-radius: 5px;
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #F686BD;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+nav ul li a:hover {
+    color: #ffb6c1;
+    background-color: #F1E4F3; 
+}
+
+main.container {
+    flex: 1;
+    width: 100%;
+    margin-top: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.home {
+    background-color: #F1E4F3;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom:75px;
+    gap: 40px; 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.animation-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #F686BD; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-container lottie-player {
+    position: absolute;
+    width: 250px; 
+    height: 250px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    background-color: transparent; 
+}
+
+#anim1 {
+    opacity: 1;
+    display: block;
+}
+
+.home-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-text h1 {
+    font-size: 28px;
+    color:#F686BD;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-text p {
+    font-size: 18px;
+    color: #333333; 
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-text .quote {
+    font-style: italic;
+    color: #595758; 
+    font-weight: bold;
+}
+.title{
+    font-size: 28px;
+    color: white;
+    font-weight: bold; 
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 40px 0 20px 0;
+    padding-left: 15px; 
+    border-left: 5px solid #F686BD;
+    scroll-margin-top: 100px; 
+}
+.experience,
+.projects,
+.courses {
+    margin-bottom: 75px; 
+}
+
+.experience {
+    background-color: #F1E4F3;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.experience h2, .projects h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #FE5D9F;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 600; 
+}
+
+.experience-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 25px; 
+    border-bottom: 4px solid #EEE; 
+    padding-bottom: 15px; 
+}
+
+.experience-details p {
+    margin: 5px 0;
+}
+
+.role {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+.date{
+    color: #A9A9A9;
+    font-size: 16px;
+    font-style: italic; 
+}
+
+.experience-list li {
+    margin-bottom: 12px; 
+    font-size: 16px;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.tags p {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #F686BD;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.tags p a{
+    text-decoration: none;
+    color: white;
+}
+
+.tags p:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+
+.projects {
+    background-color: #F1E4F3;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+.projects:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.courses {
+    background-color: #F1E4F3;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.courses:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.courses-garden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.flower-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.flower-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.flower-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.flower-container:nth-child(odd) {
+    top: -10px;
+}
+
+.flower-container:nth-child(even) {
+    top: 10px;
+}
+
+.spinning-flower {
+    width: 150px;
+    height: 150px;
+    animation: spin 10s linear infinite; 
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scatter {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+.course-label {
+    margin-top: 15px;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    max-width: 140px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #F1E4F3; 
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    color: #F686BD; 
+    font-family: 'Poppins', serif; 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+.footer p{
+    margin: 0;
+    padding: 30px;
+    text-decoration: none;
+}
+.footer p a{
+    text-decoration: none;
+    color: #F686BD; 
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    
+}
+.footer p a:hover {
+    color: #ffffff;
+    background-color:#F1E4F3;
+    border-radius: 5px;
+    padding: 10px;
+}

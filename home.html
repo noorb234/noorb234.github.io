@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noor's Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src ="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"><img src="noorLogo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="Menu">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+  
+    <main class = "container">
+        <div class= "home">
+
+            <div class="animation-container">
+                <lottie-player
+                    id="anim1"
+                    src="flower.json"
+                    background="transparent"
+                    speed="1"
+                    autoplay>
+                </lottie-player>
+            
+                <lottie-player
+                    id="anim2"
+                    src="computer.json"
+                    background="transparent"
+                    speed="1"
+                    hidden>
+                </lottie-player>
+            </div>
+
+            <div class="home-text">
+                <h1>Hi, I'm Noor!</h1>
+                <p>I'm a creative and passionate developer blending technology with design to craft elegant and meaningful digital experiences.</p>
+                <p class="quote">"Petals fade, binary builds"</p>
+            </div>
+            
+        </div>
+        <h1 class = "title" id ="experience">Experience</h1>
+        <div class="experience">
+            <h2>Skyscanner Software Engineering Job Simulation</h2>
+            <div class="experience-details">
+                <p class="role">Full Stack Developer</p>
+                <p class="date">Remote - February 2025</p>
+            </div>
+            <ul class="experience-list">
+                <li>Designed and developed a basic web app using JavaScript to simulate user interactions.</li>
+                <li>Built a Dropwizard microservice in Java to help users search for car rentals and hotels, integrating data management processes.</li>
+                <li>Created an Android application using Backpack to display flight itineraries, focusing on user experience and intuitive design.</li>
+                <li>Produced wireframes and user flows in Figma, ensuring seamless cross-platform functionality.</li>
+            </ul>
+            <div class = "tags"> 
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>Kotlin</p>
+                <p><a href = "https://www.figma.com/design/POAw2qAf1vg8cNRsxI4Rpm/Skyscanner-AD?node-id=0-1&t=rtmyHNNifmAIhVJh-1">Figma Link</a></p>
+
+            </div>
+        </div>
+        
+        <h1 class = "title" id = "projects">Projects</h1>
+            <div class="projects">
+                <h2>SmartBudget (In Progress)</h2>
+                <div class="project-details">
+                    SmartBudget is a mobile budgeting app designed to help users track expenses, set financial goals, and visualize spending habits through interactive charts. It features a “What If” calculator for forecasting expenses and supports real-time tracking with an intuitive interface built using Java, JavaScript, PHP, and MySQL.
+                </div>
+                <div class = "tags"> 
+                    <p>Java</p>
+                    <p>JavaScript</p>
+                    <p>CSS</p>
+                    <p>PHP</p>
+                    <p>MySQL</p>
+                    <p><a href ="https://www.figma.com/design/tmtNT0CS9z1LRE2ag3mqib/SmartBudget?node-id=0-1&t=9BcOHrg4hcdvw63K-1">Figma Link</a></p>
+                </div>
+            </div>
+
+        <h1 class = "title" id = "courses">Courses</h1>
+        <div class= "courses">
+            <div class="flower-grid">
+
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Software Engineering</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower"src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Operating Systems</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Data Structures & Algorithms</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Discrete Mathematics</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Intro to Object Oriented Programming</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay></lottie-player>
+                    <p class="course-label">Applied Calculus I - III</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Applied Linear Algebra</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player  class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Programming Fundamentals</p>
+                </div>
+            
+                <div class="flower-container">
+                    <lottie-player class="flowerAnimation spinning-flower" src="flower.json" background="transparent" speed=".5" loop autoplay ></lottie-player>
+                    <p class="course-label">Digital Logic Design</p>
+                </div>
+            
+            </div>
+            
+            
+            
+        </div>
+    </main>
+
+
+<footer>
+    <div class="footer" id = "footer">
+        <p><a href="https://www.linkedin.com/in/noor-baig-3773a4290/"><i class="fa-brands fa-linkedin"></i> Linkedin</a></p>
+        <p><a href = "https://github.com/noorb234"><i class="fa-brands fa-github"></i> GitHub</a></p>
+        <p><i class="fa-solid fa-envelope"></i> noorbaig78611@gmail.com</a></p>
+        <p> &copy; 2025 Noor Baig</p>
+
+    </div>
+</footer>
+
+</body>
+</html>
